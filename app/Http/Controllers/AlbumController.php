@@ -10,4 +10,11 @@ class AlbumController extends Controller
     {
         return 'Hello Album!';
     }
+
+    public function test()
+    {
+        // $url = route('profile');
+
+        return redirect()->route('album');
+    }
 }

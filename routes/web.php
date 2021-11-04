@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 
 Route::get('/album', [AlbumController::class, 'index'])->name('album');
+Route::get('/album/test', [AlbumController::class, 'test']);
