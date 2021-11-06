@@ -17,4 +17,9 @@ class AlbumController extends Controller
 
         return redirect()->route('album');
     }
+
+    public function token()
+    {
+        return 'Token is valid!';
+    }
 }

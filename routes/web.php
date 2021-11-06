@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AlbumController;
+use App\Http\Middleware\CheckToken;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,7 @@ Route::get('/', function () {
 
 Route::get('/album', [AlbumController::class, 'index'])->name('album');
 Route::get('/album/test', [AlbumController::class, 'test']);
+
+Route::middleware([CheckToken::class])->group(function () {
+    Route::get('/album/token', [AlbumController::class, 'token']); // http://laravel.loc/album/token?token=my-secret-token
+});
