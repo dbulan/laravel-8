@@ -1,7 +1,19 @@
 cd C:\openserver\domains\www.laravel
 
+C:/OpenServer/modules/php/PHP_7.4/php ...
+
 # breeze
 
 $ php artisan migrate
 $ composer require laravel/breeze --dev
 $ php artisan breeze:install
+
+$ npm install
+$ npm run dev
+    // webpack is not recognized as a internal or external command,operable program or batch file
+    // npm install --save-dev cross-env // maybe not necessary 
+    // npm install -g webpack
+    // npm i -g webpack-cli [Execute this command]
+    // npm install && npm run dev
+
+$ php artisan migrate
