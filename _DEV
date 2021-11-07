@@ -1,0 +1,7 @@
+cd C:\openserver\domains\www.laravel
+
+# breeze
+
+$ php artisan migrate
+$ composer require laravel/breeze --dev
+$ php artisan breeze:install
